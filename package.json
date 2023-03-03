@@ -1,24 +1,35 @@
 {
-    "name": "espree-logging-solution",
-    "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+    "name": "@alu0101229775/espree-logging",
+    "author": "Gerard Antony Caramazza Vilá <alu0101229775@ull.edu.es> (https://github.com/alu0101229775)",
     "description": "Adds logs to javascript code",
     "type": "module",
     "bin": {
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "fill": "your scripts here"
+        "test": "mocha test/test.mjs",
+        "cov": "c8 npm test",
+        "cov-doc": "c8 --reporter=html --reporter=text --report-dir docs/coverage mocha",
+        "doc": "documentation build ./src/** -f html -o docs",
+        "test1": "bin/log.js test/data/test1.js",
+        "test2": "bin/log.js test/data/test2.js",
+        "test3": "bin/log.js test/data/test3.js"
     },
     "dependencies": {
+        "@alu0101229775/espree-logging": "^0.1.1",
         "acorn": "^8.8.2",
         "commander": "^10.0.0",
         "escodegen": "^2.0.0",
         "espree": "^9.4.1",
         "estraverse": "^5.2.0",
-        "underscore": "^1.12.0"
+        "i": "^0.3.7",
+        "underscore": "^1.12.0",
+        "yarn": "^1.22.19"
     },
     "version": "0.3.0",
     "devDependencies": {
-        "mocha": "^10.2.0"
+        "c8": "^7.13.0",
+        "mocha": "^10.2.0",
+        "nyc": "^15.1.0"
     }
 }

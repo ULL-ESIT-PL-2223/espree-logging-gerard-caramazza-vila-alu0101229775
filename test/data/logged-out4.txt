@@ -1,0 +1,4 @@
+Entering foo(() => console.log('hi')) at line 1
+()=>console.log('hi')
+Entering <anonymous function>() at line 3
+pl

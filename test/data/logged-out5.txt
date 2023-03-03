@@ -1,0 +1,4 @@
+Entering foo(1, wut, 3) at line 1
+Entering <anonymous function>() at line 2
+Entering <anonymous function>() at line 3
+3 3 wut
